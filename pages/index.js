@@ -143,7 +143,7 @@ export default function Home({ dir }) {
           <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
               <div className="grid md:grid-cols-2 gap-4">
                   <div className="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
-                    <img className="object-cover rounded-xl aspect-square" src="./assets/gettoknowme.jpeg" alt=""/>
+                    <img className="object-cover rounded-xl aspect-square" src="/Gaby.jpg" alt=""/>
                   </div>                       
                   <div className="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
                     <div className="max-w-2xl mx-auto text-start">
