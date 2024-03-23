@@ -26,6 +26,7 @@
     "react-dom": "^18",
     "react-i18next": "^13.0.2",
     "react-intl": "^6.4.4",
+    "resend": "^3.2.0",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7"
   },
