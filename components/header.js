@@ -25,7 +25,7 @@ export default function DefaultNavbar() {
           alt="Logo"
           className="bg-transparent"          
           src="/logo.svg"
-          width={220} height={90}
+          width={190} height={90}
         />
         <span className="self-center whitespace-nowrap text-xl font-semibold text-black dark:text-white">
           
