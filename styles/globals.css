@@ -3,11 +3,16 @@
 @tailwind utilities;
 
 html,
-body,
-:root {
-  width: 100%;
+body {
+  height: 100vh;
 }
- 
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

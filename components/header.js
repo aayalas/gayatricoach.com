@@ -18,7 +18,7 @@ export default function DefaultNavbar() {
   return (
     <>
     <Navbar
-      className="sticky left-0 top-0 z-50 w-full bg-white px-4 lg:px-6 py-2.5 border-gray-200 dark:bg-gray-900"
+      className="sticky left-0 top-0 z-50 w-full bg-red-700 px-4 lg:px-6 py-2.5 border-gray-200 dark:bg-gray-900"
     >
       <Navbar.Brand href="/">
         <Image
@@ -27,9 +27,6 @@ export default function DefaultNavbar() {
           src="/logo.svg"
           width={120} height={70}
         />
-        <span className="self-center whitespace-nowrap text-xl font-semibold text-black dark:text-white">
-          
-        </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
        
