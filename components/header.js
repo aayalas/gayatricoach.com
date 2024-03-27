@@ -25,7 +25,7 @@ export default function DefaultNavbar() {
           alt="Logo"
           className=""          
           src="/logov2.svg"
-          width={105} 
+          width={100} 
           height={60}
         />
       </Navbar.Brand>
