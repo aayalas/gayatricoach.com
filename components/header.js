@@ -20,12 +20,12 @@ export default function DefaultNavbar() {
     <Navbar
       className="sticky left-0 top-0 z-50 w-full bg-white px-4 lg:px-6 py-2.5 border-gray-200 dark:bg-gray-900"
     >
-      <Navbar.Brand href="/">
+      <Navbar.Brand href="/" className='h-9 md:h-6 sm:h-3'>
         <Image
           alt="Logo"
           className=""          
           src="/logov2.svg"
-          width={130} 
+          width={110} 
           height={60}
         />
       </Navbar.Brand>
