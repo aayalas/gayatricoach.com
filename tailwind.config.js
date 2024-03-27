@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
 module.exports = {
   darkMode: ["class"],
   content: [
@@ -77,6 +78,22 @@ module.exports = {
   },
   plugins: [
     require("tailwindcss-animate"),
-    require("flowbite/plugin")
+    require("flowbite/plugin"),
+    // firefox only modifier
+    plugin(({ addVariant, e, postcss }) => {
+      addVariant('firefox', ({ container, separator }) => {
+        const isFirefoxRule = postcss.atRule({
+          name: 'supports',
+          params: '(-moz-appearance:none)',
+        })
+        isFirefoxRule.append(container.nodes)
+        container.append(isFirefoxRule)
+        isFirefoxRule.walkRules((rule) => {
+          rule.selector = `.${e(
+            `firefox${separator}${rule.selector.slice(1).replaceAll('\\', '')}`
+          )}`
+        })
+      })
+    }),
   ],
 }
