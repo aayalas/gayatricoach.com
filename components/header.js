@@ -18,14 +18,15 @@ export default function DefaultNavbar() {
   return (
     <>
     <Navbar
-      className="sticky left-0 top-0 z-50 w-full bg-red-700 px-4 lg:px-6 py-2.5 border-gray-200 dark:bg-gray-900"
+      className="sticky left-0 top-0 z-50 w-full bg-white px-4 lg:px-6 py-2.5 border-gray-200 dark:bg-gray-900"
     >
       <Navbar.Brand href="/">
         <Image
           alt="Logo"
-          className="bg-transparent"          
-          src="/logo.svg"
-          width={120} height={70}
+          className=""          
+          src="/logov2.svg"
+          width={200} 
+          height={100}
         />
       </Navbar.Brand>
       <div className="flex md:order-2">

@@ -14,6 +14,7 @@ import { Card, Flowbite } from 'flowbite-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faPhone, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { PhoneCall } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 // import { faHeart } from "@fortawesome/free-solid-svg-icons";
 // import '../node_modules/@fortawesome/fontawesome-svg-core/styles.css'
@@ -253,7 +254,7 @@ export default function Home({ dir }) {
               </div>
               <div className="grid md:grid-cols-1 pt-8 gap-8">
                 <div className="bg-gray-50 dark:bg-white text-center items-center border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 shadow-lg">
-                  <a className="text-3xl font-normal leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-gray-900" href='tel:+19548604423'><FontAwesomeIcon icon={faPhone} className="fas fa-phone" style={{ color: "green", fontSize: 45 }}/> + 1 (954) 800-4423</a>
+                  <a className="text-xl font-normal leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-gray-900" href='tel:+19548604423'><FontAwesomeIcon icon={faPhone} className={cn("fas fa-phone text-green font")} style={{ color: "green", fontSize: 25 }}/> + 1 (954) 800-4423</a>
                 </div>                
               </div>
             </div>                      
