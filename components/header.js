@@ -25,8 +25,8 @@ export default function DefaultNavbar() {
           alt="Logo"
           className=""          
           src="/logov2.svg"
-          width={150} 
-          height={90}
+          width={130} 
+          height={60}
         />
       </Navbar.Brand>
       <div className="flex md:order-2">
